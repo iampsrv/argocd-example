@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: myfirstpod
-          image: psrv3/argocd-example:v1.0
+          image: psrv3/argocd-example:v2.0
           ports:
             - containerPort: 5000
   replicas: 3
