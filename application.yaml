@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/iampsrv/argocd-example.git
     targetRevision: HEAD
-    # path: dev
+    path: /
   destination: 
     server: https://kubernetes.default.svc
     namespace: default
