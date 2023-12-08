@@ -11,3 +11,6 @@ kubectl port-forward svc/argocd-server -n argocd 8080:443
 kubectl get secret argocd-initial-admin-secret -n argocd -o yaml
 
 echo hash | base64 --decode
+
+
+kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
